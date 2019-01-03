@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "SmrCategory"
-s.version      = "1.0.0"
+s.version      = "1.0.1"
 s.summary      = "Categorys."
 s.homepage     = "https://github.com/simaier/Category-Tool"
 s.license      = "MIT"

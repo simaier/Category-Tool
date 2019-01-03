@@ -8,13 +8,33 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        judgeModel()
     }
 
 
 }
+
+//    MARK: - 机型判断示例用法
+extension ViewController : iPhoneModelS
+{
+    func judgeModel()
+    {
+        if iPhone() == .iPhone4 {
+            print("我是过气的iPhone")
+        }else if iPhone() == .iPhoneX
+        {
+            print("我是现在超流行超贵的iPhone")
+        }else
+        {
+            print("我是大家都在用的iPhone")
+        }
+    }
+}
+
 

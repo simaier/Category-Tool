@@ -14,6 +14,7 @@
 		A42EDB1C21DDBEB400B3A1F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42EDB1A21DDBEB400B3A1F7 /* LaunchScreen.storyboard */; };
 		A42EDB2721DDBEB400B3A1F7 /* Category_ToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EDB2621DDBEB400B3A1F7 /* Category_ToolTests.swift */; };
 		A42EDB3221DDBEB400B3A1F7 /* Category_ToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EDB3121DDBEB400B3A1F7 /* Category_ToolUITests.swift */; };
+		A42EDB7B21DDE75400B3A1F7 /* UIDevice_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EDB7A21DDE75400B3A1F7 /* UIDevice_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A42EDB2D21DDBEB400B3A1F7 /* Category ToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Category ToolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42EDB3121DDBEB400B3A1F7 /* Category_ToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category_ToolUITests.swift; sourceTree = "<group>"; };
 		A42EDB3321DDBEB400B3A1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42EDB7A21DDE75400B3A1F7 /* UIDevice_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		A42EDB3F21DDBF4B00B3A1F7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A42EDB7A21DDE75400B3A1F7 /* UIDevice_Extension.swift */,
 			);
 			path = Category;
 			sourceTree = SOURCE_ROOT;
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42EDB7B21DDE75400B3A1F7 /* UIDevice_Extension.swift in Sources */,
 				A42EDB1421DDBEB200B3A1F7 /* ViewController.swift in Sources */,
 				A42EDB1221DDBEB200B3A1F7 /* AppDelegate.swift in Sources */,
 			);
