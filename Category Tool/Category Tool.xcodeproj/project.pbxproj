@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A426620921DF01D200A886F5 /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A426620821DF01D200A886F5 /* UIColor_Extension.swift */; };
 		A42EDB1221DDBEB200B3A1F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EDB1121DDBEB200B3A1F7 /* AppDelegate.swift */; };
 		A42EDB1421DDBEB200B3A1F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EDB1321DDBEB200B3A1F7 /* ViewController.swift */; };
 		A42EDB1721DDBEB200B3A1F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42EDB1521DDBEB200B3A1F7 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A426620821DF01D200A886F5 /* UIColor_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
 		A42EDB0E21DDBEB200B3A1F7 /* Category Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Category Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42EDB1121DDBEB200B3A1F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A42EDB1321DDBEB200B3A1F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		A42EDB3F21DDBF4B00B3A1F7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A426620821DF01D200A886F5 /* UIColor_Extension.swift */,
 				A42EDB7A21DDE75400B3A1F7 /* UIDevice_Extension.swift */,
 			);
 			path = Category;
@@ -270,6 +273,7 @@
 				A42EDB7B21DDE75400B3A1F7 /* UIDevice_Extension.swift in Sources */,
 				A42EDB1421DDBEB200B3A1F7 /* ViewController.swift in Sources */,
 				A42EDB1221DDBEB200B3A1F7 /* AppDelegate.swift in Sources */,
+				A426620921DF01D200A886F5 /* UIColor_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

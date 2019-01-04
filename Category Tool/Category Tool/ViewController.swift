@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         judgeModel()
+        color()
     }
 
 
@@ -37,4 +38,18 @@ extension ViewController : iPhoneModelS
     }
 }
 
-
+//    MARK: - 颜色分类示例用法
+extension ViewController : iColor
+{
+    func color()
+    {
+        let redView = UIView.init(frame: CGRect.init(x: 100, y: 50, width: 150, height: 150))
+        redView.backgroundColor = ColorFromHex(hex: "ff7845") // -> 16进制颜色转换不带透明度，不需要写#
+        redView.backgroundColor = ColorFromHexWithAlpha(hex: "ff6523", alpha: 0.8) // -> 16进制颜色转换带透明度,不需要写#
+        redView.backgroundColor = ColorWithRGB(red: 145, green: 111, blue: 261) // -> rgb颜色不带透明度，除过255了
+        redView.backgroundColor = ColorWithRGBA(red: 124, green: 156, blue: 350, alpha: 0.8) // -> rgba颜色带透明度，除过255了
+        view.addSubview(redView)
+        
+        
+    }
+}
