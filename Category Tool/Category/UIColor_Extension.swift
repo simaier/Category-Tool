@@ -48,7 +48,7 @@ public protocol iColor {
     
 }
 
- extension iColor
+ public extension iColor
 {
     /// 转换颜色
     ///
