@@ -5,7 +5,7 @@
 
 
 
-## The first release - (机型判断)
+## The first release - (机型判断)  2019.01.03
 
 ## Adding SmrCategory to your project (添加 SmrCategory 到你的项目)
 
@@ -53,7 +53,7 @@ print("我是iPhone4")
 }
 ```
 
-## The first release - (颜色分类)
+## The second release - (颜色分类) 2019.01.04
 
 ## 实现方法
 ```
@@ -136,7 +136,7 @@ redview.backgroundColor = ColorWithRGBA(red: 123, green: 154, blue: 112, alpha: 
 ```
 
 
-## The second release - (时间格式化)
+## The second release - (时间格式化) 2019.01.07
 
 ## 实现方法
 ```
