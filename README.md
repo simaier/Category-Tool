@@ -136,7 +136,7 @@ redview.backgroundColor = ColorWithRGBA(red: 123, green: 154, blue: 112, alpha: 
 ```
 
 
-## The second release - (时间格式化) 2019.01.07
+## The third release - (时间格式化) 2019.01.07
 
 ## 实现方法
 ```
