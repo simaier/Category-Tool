@@ -44,3 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+func SiMaiEr_Log<T>(message : T ,file : String = #file,funcName : String = #function, lineNum : Int = #line ) {
+    #if DEBUG
+    let fileName = (file as NSString).lastPathComponent
+    
+    print("\(fileName):[\(funcName)]((\(lineNum))-\(message)")
+    #endif
+}

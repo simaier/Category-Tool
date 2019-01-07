@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         
         judgeModel()
         color()
+        time()
     }
 
 
@@ -49,6 +50,41 @@ extension ViewController : iColor
         redView.backgroundColor = ColorWithRGB(red: 145, green: 111, blue: 261) // -> rgb颜色不带透明度，除过255了
         redView.backgroundColor = ColorWithRGBA(red: 124, green: 156, blue: 350, alpha: 0.8) // -> rgba颜色带透明度，除过255了
         view.addSubview(redView)
+        
+        
+    }
+}
+
+//    MARK: - 时间格式化示例用法
+extension ViewController : iDate
+{
+    func time()
+    {
+        let timeStr = "2018-03-05 09:20:05"
+        let timeStr1 = "2019-01-06 15:57:05"
+        
+        let time0 = getNowTimeIntervalStr()  // -> 获取系统当前的时间戳(当前时间距1970的秒数，以毫秒为单位)
+        SiMaiEr_Log(message: time0)
+        
+        let time1 = getTimeWithFormate(formate: "yyyy-MM-dd HH:mm")  // -> 按指定格式获取当前的时间
+        SiMaiEr_Log(message: time1)
+        
+        let time2 = getNowTimeInterval()  // -> 获取当前的时间
+        SiMaiEr_Log(message: time2)
+        
+        let time3 = returnTimeIntercal(dateStr: timeStr, oldFormate:"yyyy-MM-dd HH:mm:ss" , newFormate: "yyyy-MM-dd HH:mm")  // -> 按指定格式返回时间字符串
+        SiMaiEr_Log(message: time3)
+        
+        let time4 = dateStringWithDelta(delta: 120)  // -> 得到指定时间差值的日期字符串(计量单位是秒S)
+        SiMaiEr_Log(message: time4)
+        
+        let time5 = dateDescriptionWithTargetDate(datestr: timeStr, dateFormateStr: "yyyy-MM-dd HH:mm:ss") // -> 返回日期格式字符串
+        SiMaiEr_Log(message: time5)
+        let time6 = dateDescriptionWithTargetDate(datestr: timeStr1, dateFormateStr: "yyyy-MM-dd HH:mm:ss")
+        SiMaiEr_Log(message: time6)
+        let time7 = dateDescriptionWithTargetDate(datestr: time2, dateFormateStr: "yyyy-MM-dd HH:mm:ss")
+        SiMaiEr_Log(message: time7)
+        
         
         
     }
