@@ -116,21 +116,25 @@ public protocol iColor {
         return UIColor.init(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: alpha)
     }
     
+    /// 16进制转UIColor
     func ColorFromHex(hex : String) -> UIColor
     {
         return proceesHex(hex: "#" + hex, alpha: 1.0)
     }
     
+    /// 16进制转UIColor(带alpha)
     func ColorFromHexWithAlpha(hex : String, alpha : CGFloat) -> UIColor
     {
         return proceesHex(hex: "#" + hex, alpha: alpha)
     }
     
+    /// 颜色快速方法(带alpha)
     func ColorWithRGBA(red : CGFloat, green : CGFloat, blue : CGFloat, alpha : CGFloat) -> UIColor
     {
         return UIColor.init(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: alpha)
     }
     
+    /// 颜色快速方法
     func ColorWithRGB(red : CGFloat, green : CGFloat, blue : CGFloat) -> UIColor
     {
         return UIColor.init(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: 1)

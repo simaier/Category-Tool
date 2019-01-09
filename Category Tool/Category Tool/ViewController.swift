@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         judgeModel()
         color()
         time()
+        iverify()
     }
 
 
@@ -87,5 +88,27 @@ extension ViewController : iDate
         
         
         
+    }
+}
+
+extension ViewController : iVerify
+{
+    func iverify()
+    {
+        SiMaiEr_Log(message: detectionIsPhoneNumbeQualified(patternStr: "18682002183"))
+        SiMaiEr_Log(message: detectionIsCMMobilePhone(patternStr: "18682002183"))
+        SiMaiEr_Log(message: detectionIsCUMobilePhone(patternStr: "18682002188"))
+        SiMaiEr_Log(message: detectionIsCTMobilePhone(patternStr: "18682002111"))
+        SiMaiEr_Log(message: detectionIsEmailQualified(patternStr: "zeromis@outlook.com"))
+        SiMaiEr_Log(message: detectionIsPasswordQualified(patternStr: "smr1231"))
+        SiMaiEr_Log(message: detectionIsIdentityCardNumberQualified(patternStr: "620302199504030656"))
+        SiMaiEr_Log(message: detectionIsIpAddress(patternStr: "192.168.1.1"))
+        SiMaiEr_Log(message: detectionIsAllNumber(patternStr: "123456"))
+        SiMaiEr_Log(message: detectionIsLetter(patternStr: "abcfders"))
+        SiMaiEr_Log(message: detectionIsUrl(patternStr: "http://www.baidu.com"))
+        SiMaiEr_Log(message: detectionIsChinese(patternStr: "我是谁"))
+        SiMaiEr_Log(message: detectionIsCarId(patternStr: "粤B9D8V8"))
+        SiMaiEr_Log(message: detectionIsEmpty(patternStr: ""))
+        SiMaiEr_Log(message: detectionIsQQ(patternStr: "450851460"))
     }
 }

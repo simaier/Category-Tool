@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A41D90A721E349E6000894C6 /* NSDate_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D90A621E349E6000894C6 /* NSDate_Extension.swift */; };
+		A41E189A21E5F74B00773AC8 /* NSString_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41E189921E5F74B00773AC8 /* NSString_Extension.swift */; };
 		A426620921DF01D200A886F5 /* UIColor_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A426620821DF01D200A886F5 /* UIColor_Extension.swift */; };
 		A42EDB1221DDBEB200B3A1F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EDB1121DDBEB200B3A1F7 /* AppDelegate.swift */; };
 		A42EDB1421DDBEB200B3A1F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42EDB1321DDBEB200B3A1F7 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		A41D90A621E349E6000894C6 /* NSDate_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate_Extension.swift; sourceTree = "<group>"; };
+		A41E189921E5F74B00773AC8 /* NSString_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSString_Extension.swift; sourceTree = "<group>"; };
 		A426620821DF01D200A886F5 /* UIColor_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor_Extension.swift; sourceTree = "<group>"; };
 		A42EDB0E21DDBEB200B3A1F7 /* Category Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Category Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42EDB1121DDBEB200B3A1F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		A42EDB3F21DDBF4B00B3A1F7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A41E189921E5F74B00773AC8 /* NSString_Extension.swift */,
 				A41D90A621E349E6000894C6 /* NSDate_Extension.swift */,
 				A426620821DF01D200A886F5 /* UIColor_Extension.swift */,
 				A42EDB7A21DDE75400B3A1F7 /* UIDevice_Extension.swift */,
@@ -278,6 +281,7 @@
 				A42EDB1421DDBEB200B3A1F7 /* ViewController.swift in Sources */,
 				A42EDB1221DDBEB200B3A1F7 /* AppDelegate.swift in Sources */,
 				A426620921DF01D200A886F5 /* UIColor_Extension.swift in Sources */,
+				A41E189A21E5F74B00773AC8 /* NSString_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

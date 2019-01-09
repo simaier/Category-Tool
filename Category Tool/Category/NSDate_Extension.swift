@@ -75,6 +75,7 @@ public protocol iDate {
 
 public extension iDate
 {
+    /// 获取系统当前的时间戳，即当前时间距1970的秒数(以毫秒为单位)
     func getNowTimeIntervalStr() -> String
     {
         let date = NSDate.init(timeIntervalSinceNow: 0)
@@ -85,6 +86,7 @@ public extension iDate
         return timeStr
     }
     
+    /// 按指定格式获取当前的时间
     func getTimeWithFormate(formate : String) -> String
     {
 //        获取系统当前时间
@@ -99,11 +101,13 @@ public extension iDate
         return currentDateStr
     }
     
+    /// 获取当前的时间
     func getNowTimeInterval() ->String
     {
         return getTimeWithFormate(formate: "yyyy-MM-dd HH:mm:ss")
     }
     
+    /// 按指定格式返回时间字符串
     func returnTimeIntercal(dateStr : String, oldFormate : String, newFormate : String) -> String
     {
 //        获取系统当前时间
@@ -140,6 +144,7 @@ public extension iDate
         return destDate
     }
     
+    /// 返回指定时间差值的日期字符串
     func dateStringWithDelta(delta : TimeInterval) -> String
     {
         let date = Date.init(timeIntervalSinceNow: delta)
@@ -148,6 +153,7 @@ public extension iDate
         return formatter.string(from: date)
     }
     
+    /// 返回日期格式字符串
     func dateDescriptionWithTargetDate(datestr : String, dateFormateStr : String) -> String
     {
 //        获取当前时间

@@ -294,3 +294,178 @@ let time7 = dateDescriptionWithTargetDate(datestr: time0, dateFormateStr: "yyyy-
 SiMaiEr_Log(message: time7)
 
 ```
+
+
+## The forth release - (正则表达式) 2019.01.09
+
+## 实现方法
+```
+/// 最终正则匹配结果
+///
+/// - Parameters:
+///   - regex: 传入正则字符串
+///   - targetString: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func regexPatternResultWithRegex(regex : String, targetString : String) -> Bool
+
+/// 检测是否为有效电话号码
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsPhoneNumbeQualified(patternStr : String) -> Bool
+
+/// 检测是否为移动号
+/// 中国移动：China Mobile
+/// 中国移动号段：134[0-8],13[5-9],147,15[0-2],15[7-9],170[3|5|6],178,18[2-4],18[7-8]
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsCMMobilePhone(patternStr : String) -> Bool
+
+/// 检测是否为联通号
+/// 中国联通：China Unicom
+/// 中国联通号段：13[0-2],145,15[5-6],17[5-6],18[5-6],170[4|7|8|9],171
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsCUMobilePhone(patternStr : String) -> Bool
+
+/// 检测是否为电信号
+/// 中国电信：China Telecom
+/// 133,1349,149,153,173,177,180,181,189,170[0-2]
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsCTMobilePhone(patternStr : String) -> Bool
+
+/// 检测是否为有效邮箱
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsEmailQualified(patternStr : String) -> Bool
+
+/// 检测用户输入密码是否以字母开头，长度在6~18之间，只能包含字符、数字和下划线
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsPasswordQualified(patternStr : String) -> Bool
+
+/// 检测身份证号(15位或18位)
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsIdentityCardNumberQualified(patternStr : String) -> Bool
+
+/// 检测是否为有效的IP地址
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsIpAddress(patternStr : String) -> Bool
+
+/// 检测输入的是否全为数字
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsAllNumber(patternStr : String) -> Bool
+
+/// 检测由26个英文字母组成的字符串
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsLetter(patternStr : String) -> Bool
+
+/// 检测输入的是否是URL地址
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsUrl(patternStr : String) -> Bool
+
+/// 检测输入的是否是汉字
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsChinese(patternStr : String) -> Bool
+
+/// 检测车牌号
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsCarId(patternStr : String) -> Bool
+
+/// 检测字符串是否为空值
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsEmpty(patternStr : String) -> Bool
+
+/// 检测QQ号
+///
+/// - Parameter patternStr: 传入需要检测的字符串
+/// - Returns: 返回检测结果 是 或者 不是
+func detectionIsQQ(patternStr : String) -> Bool
+
+```
+
+## Adding SmrCategory to your project (添加 SmrCategory 到你的项目)
+
+[CocoaPods](http://cocoapods.org) is the recommended way to add `SmrCategory` to your project.
+
+1. Add a pod entry for `SmrCategory` to your Podfile </br>
+```
+pod 'SmrCategory'
+```
+2. Install the pod(s) by running </br>
+```
+pod install
+```
+3. Include `SmrCategory`once you need it with </br>
+```
+import SmrCategory
+```
+4. Include iVerify once you need it with </br>
+```
+class ViewController: UIViewController,iVerify {
+
+var timeStr = String()
+var timeStr1 = String()
+
+
+override func viewDidLoad() {
+super.viewDidLoad()
+
+SiMaiEr_Log(message: detectionIsPhoneNumbeQualified(patternStr: "18682002183"))
+SiMaiEr_Log(message: detectionIsCMMobilePhone(patternStr: "18682002183"))
+SiMaiEr_Log(message: detectionIsCUMobilePhone(patternStr: "18682002188"))
+SiMaiEr_Log(message: detectionIsCTMobilePhone(patternStr: "18682002111"))
+SiMaiEr_Log(message: detectionIsEmailQualified(patternStr: "zeromis@outlook.com"))
+SiMaiEr_Log(message: detectionIsPasswordQualified(patternStr: "smr1231"))
+SiMaiEr_Log(message: detectionIsIdentityCardNumberQualified(patternStr: "620302199504030656"))
+SiMaiEr_Log(message: detectionIsIpAddress(patternStr: "192.168.1.1"))
+SiMaiEr_Log(message: detectionIsAllNumber(patternStr: "123456"))
+SiMaiEr_Log(message: detectionIsLetter(patternStr: "abcfders"))
+SiMaiEr_Log(message: detectionIsUrl(patternStr: "http://www.baidu.com"))
+SiMaiEr_Log(message: detectionIsChinese(patternStr: "我是谁"))
+SiMaiEr_Log(message: detectionIsCarId(patternStr: "粤B9D8V8"))
+SiMaiEr_Log(message: detectionIsEmpty(patternStr: ""))
+SiMaiEr_Log(message: detectionIsQQ(patternStr: "450851460"))
+
+}
+
+```
+
+## Example
+```
+SiMaiEr_Log(message: detectionIsPhoneNumbeQualified(patternStr: "18682002183"))
+SiMaiEr_Log(message: detectionIsCMMobilePhone(patternStr: "18682002183"))
+SiMaiEr_Log(message: detectionIsCUMobilePhone(patternStr: "18682002188"))
+SiMaiEr_Log(message: detectionIsCTMobilePhone(patternStr: "18682002111"))
+SiMaiEr_Log(message: detectionIsEmailQualified(patternStr: "zeromis@outlook.com"))
+SiMaiEr_Log(message: detectionIsPasswordQualified(patternStr: "smr1231"))
+SiMaiEr_Log(message: detectionIsIdentityCardNumberQualified(patternStr: "620302199504030656"))
+SiMaiEr_Log(message: detectionIsIpAddress(patternStr: "192.168.1.1"))
+SiMaiEr_Log(message: detectionIsAllNumber(patternStr: "123456"))
+SiMaiEr_Log(message: detectionIsLetter(patternStr: "abcfders"))
+SiMaiEr_Log(message: detectionIsUrl(patternStr: "http://www.baidu.com"))
+SiMaiEr_Log(message: detectionIsChinese(patternStr: "我是谁"))
+SiMaiEr_Log(message: detectionIsCarId(patternStr: "粤B9D8V8"))
+SiMaiEr_Log(message: detectionIsEmpty(patternStr: ""))
+SiMaiEr_Log(message: detectionIsQQ(patternStr: "450851460"))
+
+```
