@@ -91,6 +91,11 @@ func ColorWithRGBA(red : CGFloat, green : CGFloat, blue : CGFloat, alpha : CGFlo
 ///   - blue: blue / 255.0
 func ColorWithRGB(red : CGFloat, green : CGFloat, blue : CGFloat) -> UIColor
 
+/// 随机色
+///
+/// - Returns: 生成的颜色
+func ColorWithRandow() -> UIColor
+
 ```
 
 ## Adding SmrCategory to your project (添加 SmrCategory 到你的项目)

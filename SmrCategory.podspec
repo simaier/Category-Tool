@@ -11,6 +11,7 @@ s.version      = "1.0.5"
 # 1.0.3 ->  颜色分类更新
 # 1.0.4 ->  时间格式化
 # 1.0.5 ->  正则表达式判断
+# 1.0.6 -> 颜色分类更新(增加随机色)
 
 s.summary      = "Categorys."
 s.homepage     = "https://github.com/simaier/Category-Tool"

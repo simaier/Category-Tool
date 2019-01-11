@@ -45,12 +45,79 @@ extension ViewController : iColor
 {
     func color()
     {
-        let redView = UIView.init(frame: CGRect.init(x: 100, y: 50, width: 150, height: 150))
-        redView.backgroundColor = ColorFromHex(hex: "ff7845") // -> 16进制颜色转换不带透明度，不需要写#
-        redView.backgroundColor = ColorFromHexWithAlpha(hex: "ff6523", alpha: 0.8) // -> 16进制颜色转换带透明度,不需要写#
-        redView.backgroundColor = ColorWithRGB(red: 145, green: 111, blue: 261) // -> rgb颜色不带透明度，除过255了
-        redView.backgroundColor = ColorWithRGBA(red: 124, green: 156, blue: 350, alpha: 0.8) // -> rgba颜色带透明度，除过255了
-        view.addSubview(redView)
+//        let redView = UIView.init(frame: CGRect.init(x: 100, y: 50, width: 150, height: 150))
+//        redView.backgroundColor = ColorFromHex(hex: "ff7845") // -> 16进制颜色转换不带透明度，不需要写#
+//        redView.backgroundColor = ColorFromHexWithAlpha(hex: "ff6523", alpha: 0.8) // -> 16进制颜色转换带透明度,不需要写#
+//        redView.backgroundColor = ColorWithRGB(red: 145, green: 111, blue: 261) // -> rgb颜色不带透明度，除过255了
+//        redView.backgroundColor = ColorWithRGBA(red: 124, green: 156, blue: 350, alpha: 0.8) // -> rgba颜色带透明度，除过255了
+//        view.addSubview(redView)
+        
+        let randomColor = UIView.init(frame: CGRect.init(x: 50, y: 100, width: 150, height: 150))
+        randomColor.backgroundColor = ColorWithRandow()
+        view.addSubview(randomColor)
+        
+        let random1 = UIView.init(frame: CGRect.init(x: 100, y: 100, width: 150, height: 150))
+        random1.backgroundColor = ColorWithRandow()
+        view.addSubview(random1)
+        
+        let random2 = UIView.init(frame: CGRect.init(x: 150, y: 100, width: 150, height: 150))
+        random2.backgroundColor = ColorWithRandow()
+        view.addSubview(random2)
+        
+        let random3 = UIView.init(frame: CGRect.init(x: 200, y: 100, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random3)
+        
+        let random4 = UIView.init(frame: CGRect.init(x: 220, y: 100, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random4)
+        
+        let random5 = UIView.init(frame: CGRect.init(x: 240, y: 100, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random5)
+        
+        let random6 = UIView.init(frame: CGRect.init(x: 260, y: 100, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random6)
+        
+        let random7 = UIView.init(frame: CGRect.init(x: 300, y: 120, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random7)
+        
+        let random8 = UIView.init(frame: CGRect.init(x: 310, y: 140, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random8)
+        
+        let random9 = UIView.init(frame: CGRect.init(x: 320, y: 160, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random9)
+        
+        let random10 = UIView.init(frame: CGRect.init(x: 330, y: 180, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random10)
+        
+        let random11 = UIView.init(frame: CGRect.init(x: 340, y: 200, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random11)
+        
+        let random12 = UIView.init(frame: CGRect.init(x: 50, y: 220, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random12)
+        
+        let random13 = UIView.init(frame: CGRect.init(x: 70, y: 240, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random13)
+        
+        let random14 = UIView.init(frame: CGRect.init(x: 90, y: 260, width: 150, height: 150))
+        random3.backgroundColor = ColorWithRandow()
+        view.addSubview(random14)
+        
+        
+        
+        
+        
+        
+        
         
         
     }

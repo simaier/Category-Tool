@@ -46,6 +46,11 @@ public protocol iColor {
     ///   - blue: blue / 255.0
     func ColorWithRGB(red : CGFloat, green : CGFloat, blue : CGFloat) -> UIColor
     
+    /// 随机色
+    ///
+    /// - Returns: 生成的颜色
+    func ColorWithRandow() -> UIColor
+    
 }
 
  public extension iColor
@@ -138,5 +143,11 @@ public protocol iColor {
     func ColorWithRGB(red : CGFloat, green : CGFloat, blue : CGFloat) -> UIColor
     {
         return UIColor.init(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: 1)
+    }
+    
+    /// 随机色
+    func ColorWithRandow() -> UIColor
+    {
+        return ColorWithRGBA(red: CGFloat(arc4random() % 256), green: CGFloat(arc4random() % 256), blue: CGFloat(arc4random() % 256), alpha: 1.0)
     }
 }
