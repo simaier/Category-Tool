@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 s.name         = "SmrCategory"
 
-s.version      = "1.0.5"
+s.version      = "1.0.6"
 # 1.0.0 ->  机型判断
 # 1.0.1 ->  机型判断更新
 # 1.0.2 ->  颜色分类
