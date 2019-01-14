@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 s.name         = "SmrCategory"
 
-s.version      = "1.0.6"
+s.version      = "1.0.7"
 # 1.0.0 ->  机型判断
 # 1.0.1 ->  机型判断更新
 # 1.0.2 ->  颜色分类
@@ -12,6 +12,7 @@ s.version      = "1.0.6"
 # 1.0.4 ->  时间格式化
 # 1.0.5 ->  正则表达式判断
 # 1.0.6 -> 颜色分类更新(增加随机色)
+# 1.0.7 -> 机型判断分类更新(修改iPhoneXMAX 为 iPhoneXSMAX)
 
 s.summary      = "Categorys."
 s.homepage     = "https://github.com/simaier/Category-Tool"

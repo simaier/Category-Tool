@@ -16,7 +16,7 @@ public enum iphonesModel {
     case iPhone6Plus   //414*736 ->iPhone6Plus,iPhone7Plus,iPhone8Plus
     case iPhoneX       //375*812 ->iPhoneX,iPhoneXS
     case iPhoneXR      //414*896 @2x
-    case iPhoneXMax    //414*896 @3x
+    case iPhoneXSMax    //414*896 @3x
     case UnKnow
     
 }
@@ -77,7 +77,7 @@ public extension iPhoneModelS
                     {
                         return iphonesModel.iPhoneXR
                     }
-                    return iphonesModel.iPhoneXMax
+                    return iphonesModel.iPhoneXSMax
                     
                 }
             }else
